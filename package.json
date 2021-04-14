@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Ben Silverman <bensilverman10@gmail.com>",
   "dependencies": {
+    "@fontsource/dm-mono": "^4.2.2",
     "@fontsource/rubik": "^4.2.2",
     "gatsby": "^3.2.1",
     "gatsby-plugin-alias-imports": "^1.0.5",
@@ -12,6 +13,7 @@
     "gatsby-plugin-sharp": "^3.2.0",
     "gatsby-plugin-styled-components": "^4.2.0",
     "gatsby-source-filesystem": "^3.2.0",
+    "gatsby-transformer-remark": "^4.0.0",
     "gatsby-transformer-sharp": "^3.2.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",

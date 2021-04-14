@@ -10,6 +10,7 @@ export const font = {
   size: { base: "18px", medium: "24px", large: "48px" },
   family: {
     sans: "Rubik, Inter, Helvetica, Arial, sans-serif",
+    mono: "DM Mono, Monaco, Courier New, Courier, monospace",
   },
   weight: { normal: "400", semibold: "600", bold: "700" },
 };

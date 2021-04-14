@@ -3,8 +3,10 @@ import { createGlobalStyle } from "styled-components";
 import "@fontsource/rubik/400.css";
 import "@fontsource/rubik/600.css";
 import "@fontsource/rubik/700.css";
+import "@fontsource/dm-mono/500.css";
 
 import { color, font } from "./config";
+import { hexToRGBA } from "./util";
 
 export const GlobalStyle = createGlobalStyle`
   /* START OF CSS RESET */
@@ -47,5 +49,12 @@ export const GlobalStyle = createGlobalStyle`
     margin-bottom: 0.8rem;
     line-height: 1.3;
     text-align: left;
+  }
+  code {
+    color: ${color.accent};
+    font-family: ${font.family.mono};
+    background-color: ${hexToRGBA(color.accent, 0.1)};
+    border-radius: 5px;
+    padding: 0.1em 0.5em;
   }
 `;

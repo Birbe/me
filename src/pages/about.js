@@ -47,6 +47,14 @@ const ProfileLinks = styled.ul`
   font-size: ${font.size.medium};
 `;
 
+const socials = [
+  { link: "https://twitter.com/bensilverman_", icon: <FaTwitter /> },
+  { link: "https://instagram.com/ben.silverman", icon: <FaInstagram /> },
+  { link: "https://linkedin.com/in/ben-silverman", icon: <FaLinkedinIn /> },
+  { link: "https://t.me/benslv", icon: <FaTelegramPlane /> },
+  { link: "mailto:hey@benslv.dev", icon: <FaEnvelope /> },
+];
+
 const AboutPage = () => {
   return (
     <Layout>
@@ -59,23 +67,15 @@ const AboutPage = () => {
             placeholder="tracedSVG"
             style={{ borderRadius: "5px" }}
           />
-          <ProfileLinks>
-            <TextLink to="https://twitter.com/bensilverman_">
-              <FaTwitter />
-            </TextLink>
-            <TextLink to="https://instagram.com/ben.silverman">
-              <FaInstagram />
-            </TextLink>
-            <TextLink to="https://linkedin.com/in/ben-silverman">
-              <FaLinkedinIn />
-            </TextLink>
-            <TextLink to="https://t.me/benslv">
-              <FaTelegramPlane />
-            </TextLink>
-            <TextLink to="mailto:hey@benslv.dev">
-              <FaEnvelope />
-            </TextLink>
-          </ProfileLinks>
+          {socials && (
+            <ProfileLinks>
+              {socials.map(({ link, icon }) => (
+                <TextLink to={link} key={link}>
+                  {icon}
+                </TextLink>
+              ))}
+            </ProfileLinks>
+          )}
         </Profile>
         <Content>
           <Info>
@@ -89,8 +89,8 @@ const AboutPage = () => {
               time trying to combine the two things into cool (and hopefully useful) projects!
             </p>
             <p>
-              I also love music, have been playing the saxophone for around 11 years now and I’m
-              member of my university’s Concert Band and Jazz Band.
+              I also play tenor saxophone in my university’s Jazz and Concert Bands, and have
+              probably been playing it for almost 11 years by now!
             </p>
           </Info>
           <Info>

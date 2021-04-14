@@ -107,24 +107,9 @@ const StyledMenuToggle = styled.a`
   }
 `;
 
-export const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
-
-  return (
-    <StyledNavbar id="navbar">
-      <NavHeader toggle={toggle} isOpen={isOpen} />
-      <Nav isOpen={isOpen} />
-    </StyledNavbar>
-  );
-};
-
 const Nav = ({ isOpen }) => {
   return (
     <StyledNav isOpen={isOpen}>
-      <StyledNavLink to="/about">About</StyledNavLink>
-      <StyledNavLink to="/about">About</StyledNavLink>
-      <StyledNavLink to="/about">About</StyledNavLink>
       <StyledNavLink to="/about">About</StyledNavLink>
     </StyledNav>
   );
@@ -144,6 +129,18 @@ const NavHeader = ({ toggle, isOpen }) => (
     <MenuToggle toggle={toggle} isOpen={isOpen} />
   </StyledNavHeader>
 );
+
+export const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
+
+  return (
+    <StyledNavbar id="navbar">
+      <NavHeader toggle={toggle} isOpen={isOpen} />
+      <Nav isOpen={isOpen} />
+    </StyledNavbar>
+  );
+};
 
 Nav.propTypes = {
   isOpen: PropTypes.bool.isRequired,
