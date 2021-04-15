@@ -7,6 +7,8 @@ import { TextLink } from "./TextLink";
 
 import { color, breakpoint, font } from "../theme/config";
 
+import { navbarLinks } from "../config";
+
 const StyledNavbar = styled.div`
   display: flex;
   flex-direction: column;
@@ -110,8 +112,12 @@ const StyledMenuToggle = styled.a`
 const Nav = ({ isOpen }) => {
   return (
     <StyledNav isOpen={isOpen}>
-      <StyledNavLink to="/about">About</StyledNavLink>
-      <StyledNavLink to="/blog">Blog</StyledNavLink>
+      {navbarLinks &&
+        navbarLinks.map(({ title, link }, i) => (
+          <StyledNavLink to={link} key={i}>
+            {title}
+          </StyledNavLink>
+        ))}
     </StyledNav>
   );
 };
