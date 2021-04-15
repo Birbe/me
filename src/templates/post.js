@@ -5,13 +5,16 @@ import { Layout } from "../components/Layout";
 
 const PostTemplate = ({
   data: {
-    markdownRemark: { frontmatter, html },
+    markdownRemark: {
+      frontmatter: { title, date },
+      html,
+    },
   },
 }) => {
   return (
     <Layout>
-      <h1>{frontmatter.title}</h1>
-      <h2>{frontmatter.date}</h2>
+      <h1>{title}</h1>
+      <h2>{date}</h2>
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   );

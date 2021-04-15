@@ -31,5 +31,22 @@ module.exports = {
         displayName: true,
       },
     },
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-prismjs",
+            options: {
+              classPrefix: "language-",
+              noInlineHighlight: true,
+              aliases: {
+                js: "javascript",
+              },
+            },
+          },
+        ],
+      },
+    },
   ],
 };

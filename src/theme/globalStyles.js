@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 import "@fontsource/rubik/400.css";
 import "@fontsource/rubik/600.css";
 import "@fontsource/rubik/700.css";
-import "@fontsource/dm-mono/500.css";
+import "@fontsource/dm-mono/400.css";
 
 import { color, font } from "./config";
 import { hexToRGBA } from "./util";
