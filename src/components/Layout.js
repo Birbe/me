@@ -53,4 +53,5 @@ export const Layout = ({ children, bgColor }) => {
 
 Layout.propTypes = {
   children: PropTypes.node,
+  bgColor: PropTypes.string,
 };

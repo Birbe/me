@@ -111,6 +111,7 @@ const Nav = ({ isOpen }) => {
   return (
     <StyledNav isOpen={isOpen}>
       <StyledNavLink to="/about">About</StyledNavLink>
+      <StyledNavLink to="/blog">Blog</StyledNavLink>
     </StyledNav>
   );
 };

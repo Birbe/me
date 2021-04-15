@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import PropTypes from "prop-types";
 
 import { Layout } from "../components/Layout";
 
@@ -15,7 +16,7 @@ const PostTemplate = ({
     <Layout>
       <h1>{title}</h1>
       <h2>{date}</h2>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
+      <article dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   );
 };
@@ -34,3 +35,7 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+PostTemplate.propTypes = {
+  data: PropTypes.object.isRequired,
+};
