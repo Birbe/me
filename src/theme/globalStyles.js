@@ -57,4 +57,13 @@ export const GlobalStyle = createGlobalStyle`
     border-radius: 5px;
     padding: 0.1em 0.5em;
   }
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    font-family: "DM Mono", Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 1em auto;
+  }
+    
 `;
