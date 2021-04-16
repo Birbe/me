@@ -58,7 +58,7 @@ const socials = [
 const AboutPage = () => {
   return (
     <Layout>
-      <Container>
+      <Container className="grid">
         <Profile>
           <StaticImage
             layout="fullWidth"

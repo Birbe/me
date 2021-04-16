@@ -65,5 +65,11 @@ export const GlobalStyle = createGlobalStyle`
     border-radius: 5px;
     margin: 1em auto;
   }
-    
+
+  .grid {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1em;
+  }
 `;

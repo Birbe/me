@@ -29,7 +29,7 @@ const Hero = styled.div`
 const IndexPage = () => {
   return (
     <Layout>
-      <Container>
+      <Container className="grid">
         <Hero>
           <h1>Hi, I&apos;m Ben!</h1>
           <p>

@@ -21,7 +21,7 @@ const StyledSite = styled.div`
   background-position: center -2px;
 `;
 
-const StyledContent = styled.main`
+const StyledContent = styled.div`
   flex: 1;
   width: 100%;
   margin: 0 auto;

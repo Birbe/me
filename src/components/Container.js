@@ -6,11 +6,11 @@ const StyledContainer = styled.main`
   width: 100%;
   max-width: 960px;
 
-  padding: 0 1em;
+  padding: 0 2em;
 `;
 
-export const Container = ({ children }) => {
-  return <StyledContainer>{children}</StyledContainer>;
+export const Container = ({ children, className }) => {
+  return <StyledContainer className={className}>{children}</StyledContainer>;
 };
 
 Container.propTypes = {
