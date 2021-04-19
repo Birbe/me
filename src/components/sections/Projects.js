@@ -21,6 +21,7 @@ const SectionTitle = styled.h2`
   text-transform: uppercase;
   font-weight: bold;
   font-size: ${font.size.base};
+  margin-bottom: 1em;
 `;
 
 export const Projects = () => {

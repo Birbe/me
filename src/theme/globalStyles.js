@@ -68,7 +68,6 @@ export const GlobalStyle = createGlobalStyle`
 
   .grid {
     display: grid;
-    flex-direction: column;
     grid-template-columns: repeat(6, 1fr);
     column-gap: 1em;
   }

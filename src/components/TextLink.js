@@ -6,11 +6,15 @@ import styled from "styled-components";
 import { font, color } from "../theme/config";
 
 const StyledLink = styled(Link)`
+  display: flex;
+  align-items: center;
+
   color: ${color.heading};
   font-weight: ${font.weight.semibold};
   outline: none;
   text-decoration: none;
   transition: all 0.15s ease;
+
   &:hover {
     color: ${color.accent};
   }

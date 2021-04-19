@@ -7,6 +7,8 @@ import { Layout } from "../components/Layout";
 import { Container } from "../components/Container";
 
 import { color, font } from "../theme/config";
+import { TextLink } from "../components/TextLink";
+import { BiArrowBack } from "react-icons/bi";
 
 const PostTitle = styled.h1`
   margin-bottom: 0.25rem;
@@ -40,6 +42,9 @@ const PostTemplate = ({
   return (
     <Layout>
       <Container>
+        <TextLink to="/blog">
+          <BiArrowBack style={{marginRight: "0.25em"}} /> Back
+        </TextLink>
         <PostHeader>
           <PostTitle>{title}</PostTitle>
           <PostDate>{date}</PostDate>

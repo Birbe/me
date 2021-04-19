@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 
+import { TextLink } from "../components/TextLink";
+
 import { font, color, breakpoint } from "../theme/config";
 
 const StyledCard = styled.div`
@@ -13,6 +15,7 @@ const StyledCard = styled.div`
 
   padding: 1rem;
   margin: 1em 0;
+  margin-top: 0;
 
   background-color: ${color.lightGrey};
 
@@ -26,7 +29,7 @@ const StyledCard = styled.div`
   &:hover {
     transform: scale(1.025);
     box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.1);
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
   }
 
   ${breakpoint.md} {
@@ -39,25 +42,26 @@ const Title = styled.h1`
   font-size: ${font.size.base};
 `;
 
-const Description = styled.p`
+const Content = styled.p`
+  color: ${color.text};
   font-size: ${font.size.base};
+  font-weight: ${font.weight.normal};
   margin-bottom: 0;
 `;
 
-export const Card = ({ title = "Title", description = "Description" }) => {
+export const Card = ({ title = "Title", to = null, children = "Description", className }) => {
   return (
-    <StyledCard>
-      <Title>{title}</Title>
-      <Description>
-        {description}
-        {/* I&apos;m working hard on designing this site at the moment, and am aiming to actually start
-        coding it as soon as possible! */}
-      </Description>
-    </StyledCard>
+    <TextLink to={to} className={className}>
+      <StyledCard>
+        <Title>{title}</Title>
+        <Content>{children}</Content>
+      </StyledCard>
+    </TextLink>
   );
 };
 
 Card.propTypes = {
   title: PropTypes.string,
-  description: PropTypes.string,
+  slug: PropTypes.string,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
 };
