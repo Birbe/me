@@ -1,4 +1,1 @@
-export const navbarLinks = [
-  { title: "About", link: "/about" },
-  { title: "Blog", link: "/blog" },
-];
+export const navbarLinks = [{ title: "Blog", link: "/blog" }];

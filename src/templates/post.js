@@ -29,6 +29,13 @@ const PostHeader = styled.header`
 
 const PostContent = styled.article`
   max-width: 960px;
+  margin: 0 auto;
+`;
+
+const BackLink = styled(TextLink)`
+  display: flex;
+  align-items: center;
+  width: min-content;
 `;
 
 const PostTemplate = ({
@@ -42,9 +49,9 @@ const PostTemplate = ({
   return (
     <Layout>
       <Container>
-        <TextLink to="/blog">
-          <BiArrowBack style={{marginRight: "0.25em"}} /> Back
-        </TextLink>
+        <BackLink to="/blog">
+          <BiArrowBack style={{ marginRight: "0.25em" }} /> Back
+        </BackLink>
         <PostHeader>
           <PostTitle>{title}</PostTitle>
           <PostDate>{date}</PostDate>

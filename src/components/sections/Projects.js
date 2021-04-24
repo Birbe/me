@@ -5,15 +5,15 @@ import { Card } from "../Card";
 
 import { font, breakpoint } from "../../theme/config";
 
-const StyledProjects = styled.div`
-  grid-column: 1 / span 6;
+const StyledProjects = styled.section`
+  grid-column: 1 / span 12;
 
   ${breakpoint.md} {
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 6;
   }
 
   ${breakpoint.lg} {
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 3;
   }
 `;
 

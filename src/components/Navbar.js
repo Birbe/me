@@ -17,7 +17,6 @@ const StyledNavbar = styled.div`
   background-color: ${color.background};
 
   padding: 1.5em 1em;
-  margin-bottom: 1em;
   width: 100%;
 
   ${breakpoint.md} {
@@ -26,7 +25,6 @@ const StyledNavbar = styled.div`
     align-items: center;
 
     padding: 2em 3em;
-    margin-bottom: 4em;
   }
 `;
 

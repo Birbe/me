@@ -5,7 +5,7 @@ import "@fontsource/rubik/600.css";
 import "@fontsource/rubik/700.css";
 import "@fontsource/dm-mono/400.css";
 
-import { color, font } from "./config";
+import { color, font, breakpoint } from "./config";
 import { hexToRGBA } from "./util";
 
 export const GlobalStyle = createGlobalStyle`
@@ -66,9 +66,17 @@ export const GlobalStyle = createGlobalStyle`
     margin: 1em auto;
   }
 
+  section {
+    margin-bottom: 1em;
+  }
+
   .grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    column-gap: 1em;
+    grid-template-columns: repeat(12, 1fr);
+
+    ${breakpoint.md} {
+
+    column-gap: 2em;
+    }
   }
 `;

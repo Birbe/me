@@ -1,18 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
 import styled from "styled-components";
 
-const StyledContainer = styled.main`
-  width: 100%;
-  max-width: 960px;
-
+export const Container = styled.main`
+  margin: 0 auto;
   padding: 0 2em;
+
+  width: 100%;
+  max-width: 1600px;
 `;
-
-export const Container = ({ children, className }) => {
-  return <StyledContainer className={className}>{children}</StyledContainer>;
-};
-
-Container.propTypes = {
-  children: PropTypes.node,
-};
