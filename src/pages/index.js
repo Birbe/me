@@ -20,7 +20,7 @@ const IndexPage = () => {
         <motion.div
           animate={{ scale: 1, opacity: 1, rotate: 0 }}
           initial={{ scale: 0.5, opacity: 0, rotate: -15 }}
-          transition={{ delay: 0.75}}
+          transition={{ delay: 0.75 }}
           style={{ marginLeft: "auto", marginRight: "auto" }}>
           <StaticImage
             src="../images/profile.jpg"
