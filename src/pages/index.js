@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 import { Layout } from "../components/Layout";
 import { Sidenote } from "../components/Sidenote";
@@ -16,20 +17,24 @@ const IndexPage = () => {
   return (
     <Layout>
       <Hero>
-        <StaticImage
-          src="../images/profile.jpg"
-          alt="Head and shoulders picture of me!"
-          style={{
-            borderRadius: "50%",
-            marginLeft: "auto",
-            marginRight: "auto",
-            boxShadow: "var(--box-shadow-light)",
-          }}
-          placeholder="tracedSVG"
-          aspectRatio={1 / 1}
-          layout="constrained"
-          width={150}
-        />
+        <motion.div
+          animate={{ scale: 1, opacity: 1, rotate: 0 }}
+          initial={{ scale: 0.5, opacity: 0, rotate: -15 }}
+          transition={{ delay: 0.75}}
+          style={{ marginLeft: "auto", marginRight: "auto" }}>
+          <StaticImage
+            src="../images/profile.jpg"
+            alt="Head and shoulders picture of me!"
+            style={{
+              borderRadius: "50%",
+              boxShadow: "var(--box-shadow-light)",
+            }}
+            placeholder="tracedSVG"
+            aspectRatio={1 / 1}
+            layout="constrained"
+            width={150}
+          />
+        </motion.div>
         <div>
           <h1>Hey there!</h1>
           <p>
