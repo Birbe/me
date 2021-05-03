@@ -26,8 +26,9 @@ const CardBody = styled.div`
   }
 `;
 
-const Title = styled.p`
+const Title = styled.h2`
   font-weight: 500;
+  font-size: var(--font-size-base);
 
   color: var(--color-heading);
 `;
