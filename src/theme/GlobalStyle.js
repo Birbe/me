@@ -105,7 +105,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   p {
-    line-height: 1.4;
+    line-height: 1.6;
     margin: 0;
     margin-bottom: var(--font-size-base);
 
