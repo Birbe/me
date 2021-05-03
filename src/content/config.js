@@ -14,14 +14,3 @@ export const skills = [
   "CSS",
   "Docker",
 ];
-
-export const nav = [
-  {
-    name: "Home",
-    to: "/",
-  },
-  {
-    name: "Blog",
-    to: "/blog",
-  },
-];

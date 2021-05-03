@@ -1,11 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
 import { TextLink } from "../TextLink";
 import { Emoji } from "../Emoji";
-
-import { nav } from "../../content/config";
 
 const Wrapper = styled.div`
   padding: var(--font-size-lg);
@@ -42,25 +40,24 @@ const NavLink = styled(TextLink)`
   }
 `;
 
-export const Navbar = () => {
+export const Navbar = ({ navlinks = {} }) => {
   return (
     <Wrapper>
       <motion.div
         animate={{ x: 0, rotate: 0 }}
         initial={{ x: -100, rotate: -90 }}
-        transition={{ delay: 0.1}}>
+        transition={{ delay: 0.1 }}>
         <Emoji emoji="👋" size="48px" style="" />
       </motion.div>
       <Nav
-        animate={{ x: 0, opacity: 1}}
-        initial={{ x: 200, opacity: 0}}
+        animate={{ x: 0, opacity: 1 }}
+        initial={{ x: 200, opacity: 0 }}
         transition={{ delay: 0.1 }}>
-        {nav &&
-          nav.map(({ name, to }, i) => (
-            <NavLink to={to} key={i}>
-              {name}
-            </NavLink>
-          ))}
+        {navlinks.map(({ name, to }, i) => (
+          <NavLink to={to} key={i}>
+            {name}
+          </NavLink>
+        ))}
       </Nav>
     </Wrapper>
   );

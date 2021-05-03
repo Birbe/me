@@ -1,6 +1,16 @@
 module.exports = {
   siteMetadata: {
     title: "Me",
+    menuLinks: [
+      {
+        name: "Home",
+        to: "/",
+      },
+      {
+        name: "Blog",
+        to: "/blog",
+      },
+    ],
   },
   plugins: [
     "gatsby-plugin-styled-components",
