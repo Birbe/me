@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 import { Emoji } from "../Emoji";
 
@@ -24,9 +25,9 @@ const Wrapper = styled.footer`
 export const Footer = () => {
   return (
     <Wrapper>
-      <p>
+      <motion.p initial={{ rotate: -5 }} whileHover={{ rotate: 5 }}>
         Made with <Emoji emoji="☕" /> in the UK!
-      </p>
+      </motion.p>
     </Wrapper>
   );
 };
