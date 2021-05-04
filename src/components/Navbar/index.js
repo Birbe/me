@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { Link } from "gatsby";
 
 import { TextLink } from "../TextLink";
 import { Emoji } from "../Emoji";
@@ -44,10 +45,12 @@ export const Navbar = ({ navlinks = {} }) => {
   return (
     <Wrapper>
       <motion.div
-        animate={{ x: 0, rotate: 0 }}
-        initial={{ x: -100, rotate: -90 }}
-        transition={{ delay: 0.1 }}>
-        <Emoji emoji="👋" size="48px" style="" />
+        animate={{ x: 0, rotate: 0, transition: { delay: 0.1 } }}
+        initial={{ x: -100, rotate: -90, transition: { delay: 0.1 } }}
+        whileHover={{ rotate: 15, scale: 1.1 }}>
+        <Link to="/">
+          <Emoji emoji="👋" size="48px" style="" />
+        </Link>
       </motion.div>
       <Nav
         animate={{ x: 0, opacity: 1 }}
