@@ -16,41 +16,38 @@ const AboutPage = () => {
     <Layout title="About">
       <Container id="main-content">
         <Header>
-          <StaticImage
-            src="../images/profile.jpg"
-            alt="Head and shoulders picture of me!"
-            style={{
-              borderRadius: "50%",
-              marginLeft: "auto",
-              marginRight: "auto",
-              boxShadow: "var(--box-shadow-light)",
-              margin: "0 auto",
-            }}
-            placeholder="tracedSVG"
-            aspectRatio={1 / 1}
-            layout="constrained"
-            width={150}
-            quality={100}
-          />
+          {/*<StaticImage*/}
+          {/*  src="../images/profile.jpg"*/}
+          {/*  alt="Head and shoulders picture of me!"*/}
+          {/*  style={{*/}
+          {/*    borderRadius: "50%",*/}
+          {/*    marginLeft: "auto",*/}
+          {/*    marginRight: "auto",*/}
+          {/*    boxShadow: "var(--box-shadow-light)",*/}
+          {/*    margin: "0 auto",*/}
+          {/*  }}*/}
+          {/*  placeholder="tracedSVG"*/}
+          {/*  aspectRatio={1 / 1}*/}
+          {/*  layout="constrained"*/}
+          {/*  width={150}*/}
+          {/*  quality={100}*/}
+          {/*/>*/}
           <div>
             <h2>About Me</h2>
             <p>
-              Hi! I'm Ben, a third year Computer Science student at the University of York,
-              currently working on placement at <TextLink to="https://arm.com">Arm</TextLink>.
+              Hi! I'm Erik, a full-stack developer who likes messing around with web technologies.
             </p>
             <p>
-              I'm mainly interested in frontend development at the moment and spend a lot of my time
-              on different React projects. I love the concept of creating something that other
-              people find <i>genuinely</i> useful (especially if they're people I don't know!) and
-              the process behind new projects, all the way from having an idea, to designing it, to
-              developing it and hosting it for other people to use is so much fun!
+              I quite like reverse-engineering the things I use and learning about how they work, and potentially
+              trying to re-write them myself.
             </p>
             <p>
-              <b>Outside of my studies</b>, I usually spend my time{" "}
-              <TextLink to="https://github.com/benslv">programming</TextLink>,{" "}
-              <TextLink to="https://goodreads.com/benslv">reading</TextLink> or playing in the
-              University Jazz and Concert Bands! I also enjoy playing{" "}
-              <TextLink to="https://www.trackmania.com/">Trackmania</TextLink> too!
+              <b>When I'm not programming</b>, I'm usually spending my time playing games or chatting with friends.
+
+              I played ~2400 hours of Rocket League and ~600 hours of CS:GO.
+            </p>
+            <p>
+              I live in the Netherlands and speak both English and Dutch fluently.
             </p>
           </div>
         </Header>

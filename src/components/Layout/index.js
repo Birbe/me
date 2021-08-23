@@ -15,7 +15,7 @@ export const Layout = ({ title, description, children }) => {
       <SkipToContent />
       <Navbar />
       {children}
-      <Footer />
+      {/*<Footer />*/}
     </>
   );
 };

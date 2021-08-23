@@ -17,7 +17,7 @@ const ProjectsPage = () => {
           <h2>Other Stuff</h2>
           <p>
             I host all of my projects over on{" "}
-            <TextLink to="https://github.com/benslv">GitHub</TextLink>, so check that out if
+            <TextLink to="https://github.com/birbe/me">GitHub</TextLink>, so check that out if
             you&apos;re interested to see what else I&apos;ve worked on!
           </p>
         </section>

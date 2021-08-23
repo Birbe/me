@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: "Ben Silverman",
+    title: "birb.dev",
     description:
-      "Ben Silverman is a third-year Computer Science student at the University of York, currently working on placement at Arm Ltd.",
-    author: "@bensilverman_",
-    siteUrl: "https://benslv.dev",
-    twitterUsername: "@bensilverman_",
+      "Portfolio website for Birb",
+    author: "@birbe",
+    siteUrl: "https://birb.dev",
+    twitterUsername: "",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
