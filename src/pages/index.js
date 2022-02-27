@@ -40,7 +40,7 @@ const IndexPage = () => {
         <section>
           <h2>Contact Me</h2>
           <p>
-            If you want to get in touch, you can add me as a friend on Discord; My tag is Birb#0407
+            If you want to get in touch, you can add me as a friend on Discord; My tag is Birb#9578
           </p>
         </section>
       </Container>
